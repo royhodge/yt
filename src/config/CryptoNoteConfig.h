@@ -67,7 +67,7 @@ UniBItXd --print-genesis-tx --genesis-block-reward-address
 * You should see your premine appear in the previously generated wallet.
 
 */
-const char     GENESIS_COINBASE_TX_HEX[]                     = "";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "012801ff0001ffcfa6caebf7fdaa0c029835ca644baacd76cef2d55d87fa9f00bc11b93fb6e18c36960ed812107afba121014ec975b322cdada6984e2e9c1a0073e20467e2c7f48921f453a11f817dffdd8d";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
@@ -172,14 +172,14 @@ static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] =
 {
-    5 
-    10 
-    15 
-    20 
-    25 
-    30 
-    35 
-    40 
+    5, 
+    10, 
+    15, 
+    20, 
+    25, 
+    30, 
+    35, 
+    40, 
     45 
 };
 
@@ -274,4 +274,4 @@ const char* const SEED_NODES[] = {
         "104.251.210.135:11888", // Seed2
         "104.237.10.228:11888",  // Seed3
 };
-} // CryptoNote
+}; // CryptoNote
