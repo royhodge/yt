@@ -51,7 +51,7 @@ const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(88888888
 
 * Compile your code
 
-* Run uniwallet, ignore that it can't connect to the daemon, and generate an
+* Run zedwallet, ignore that it can't connect to the daemon, and generate an
   address. Save this and the keys somewhere safe.
 
 * Launch the daemon with these arguments:
