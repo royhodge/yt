@@ -1,4 +1,12 @@
 {
   "language": "c++",
-  dist: bionic
+  dist: bionic,  
+  before_install:
+  - sudo apt-get update
+  - sudo apt-get -y install 
+  - sudo apt-get install aptitude -y
+  - sudo aptitude install -y -o Aptitude::ProblemResolver::SolutionCost='100*canceled-actions,200*removals' build-essential clang-6.0 libstdc++-7-dev git libboost-all-dev python-pip libssl-dev
+  - sudo pip install cmake
+  - export CC=clang-6.0
+  - export CXX=clang++-6.0
 }
